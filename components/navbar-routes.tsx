@@ -1,17 +1,10 @@
 "use client";
 
-import {
-  BarChart,
-  Compass,
-  FileQuestion,
-  FileQuestionIcon,
-  Layout,
-  List,
-  Users,
-} from "lucide-react";
-import SidebarItem from "./sidebar-item";
+
+
 import { usePathname } from "next/navigation";
 import NavBarItem from "./navbar-item";
+
 
 const guestRoutes = [
   {
