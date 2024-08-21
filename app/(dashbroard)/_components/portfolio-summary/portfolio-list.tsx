@@ -37,7 +37,7 @@ const PortfolioListData = [
 ];
 const PortfolioList = () => {
   return (
-    <div className="flex gap-x-24  items-center  justify-center border border-red-600 w-full ">
+    <div  className="flex gap-x-24  no-blur  items-center  justify-center border border-red-600 w-full " >
       {PortfolioListData?.map((data, index) => (
         <PortfolioListItems 
         key={index}

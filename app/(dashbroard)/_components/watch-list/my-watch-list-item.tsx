@@ -1,23 +1,33 @@
 "use client";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { useState } from "react";
 
 interface MyWatchListItemProps {
+  id: number;
   src: string;
   fullName: string;
   shortname: string;
   price: number;
   referred: number;
+  className?: string; //
 }
 const MyWatchListItem = ({
+  id,
   src,
   fullName,
   shortname,
   price,
   referred,
+  className,
 }: MyWatchListItemProps) => {
   return (
-    <div className="flex items-center justify-between py-4">
+    <div
+      className={cn(
+        "flex items-center justify-between py-4 shadow-md   ",
+        className
+      )}
+    >
       <div className="flex gap-x-4 ">
         <Image
           src={src}
